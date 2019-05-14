@@ -1,0 +1,4 @@
+Dark Gray #222222
+Light Gray #2A2A2A
+Highlight Gray #383838
+Neon Green #95D12A
