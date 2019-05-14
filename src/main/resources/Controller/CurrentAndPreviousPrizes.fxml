@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<LineChart fx:id="chart" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #2A2A2A;" styleClass="chart-series-line" stylesheets="@../CSS/Chart.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CurrentAndPreviousPrizes">
+    <BorderPane.margin>
+        <Insets left="5.0" top="5.0" />
+    </BorderPane.margin>
+    <xAxis>
+    <CategoryAxis endMargin="0.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" side="BOTTOM" startMargin="0.0" tickLabelFill="#95d12a">
+         <tickLabelFont>
+            <Font size="14.0" />
+         </tickLabelFont>
+      </CategoryAxis>
+  </xAxis>
+  <yAxis>
+    <NumberAxis maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="0" side="LEFT" tickLabelFill="#95d12a" tickLabelGap="20.0">
+         <padding>
+            <Insets left="50.0" right="50.0" />
+         </padding>
+         <tickLabelFont>
+            <Font size="14.0" />
+         </tickLabelFont>
+      </NumberAxis>
+  </yAxis>
+</LineChart>

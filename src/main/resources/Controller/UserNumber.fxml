@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" style="-fx-background-color: #2A2A2A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UserNumber">
+   <BorderPane.margin>
+      <Insets left="5.0" top="5.0" />
+   </BorderPane.margin>
+   <children>
+      <Text fill="#95d12a" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #2A2A2A;" text="Adja meg a számát">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </Text>
+      <HBox alignment="TOP_CENTER" style="-fx-background-color: #2A2A2A;">
+         <children>
+            <TextField fx:id="number" alignment="CENTER" prefHeight="53.0" prefWidth="58.0" style="-fx-background-color: white; -fx-border-color: #95D12A;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onMouseClicked="#Ok" prefHeight="53.0" prefWidth="55.0" style="-fx-border-color: #95D12A;" stylesheets="@../CSS/Button.css" text="OK">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="30.0" />
+         </VBox.margin>
+      </HBox>
+      <Text fx:id="numberOfTimesPicked" fill="#95d12a" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #2A2A2A;">
+         <VBox.margin>
+            <Insets top="40.0" />
+         </VBox.margin>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="lastTimePicked" fill="#95d12a" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #2A2A2A;">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="40.0" />
+         </VBox.margin>
+      </Text>
+      <Text fx:id="numberOfBeingInFiveHits" fill="#95d12a" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #2A2A2A;">
+         <VBox.margin>
+            <Insets top="40.0" />
+         </VBox.margin>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="numberPercentage" fill="#95d12a" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #2A2A2A;">
+         <VBox.margin>
+            <Insets top="40.0" />
+         </VBox.margin>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</VBox>

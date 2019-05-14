@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="home5pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: null;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeWindow">
+   <left>
+      <VBox prefHeight="353.0" prefWidth="171.0" style="-fx-background-color: #222222;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="ButtonOwnNumber" alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#UserNumber" prefHeight="40.0" prefWidth="172.0" style="-fx-background-radius: 30 0 0 30;" stylesheets="@../CSS/Button.css" text="SAJÁT SZÁM">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/icons8_user_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="ButtonNumbers" alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#MostCommonPicks" prefHeight="40.0" prefWidth="174.0" style="-fx-background-radius: 30 0 0 30;" stylesheets="@../CSS/Button.css" text="SZÁMOK">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/icons8_percentage2_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="ButtonPrices" alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#CurrentAndPreviousPrizes" prefHeight="40.0" prefWidth="173.0" style="-fx-background-radius: 30 0 0 30;" stylesheets="@../CSS/Button.css" text="NYEREMÉNYEK">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/icons8_graph_32px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="ButtonWinningNumbers" alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#WinningNumbers" prefHeight="40.0" prefWidth="187.0" style="-fx-background-radius: 30 0 0 30;" stylesheets="@../CSS/Button.css" text="NYERŐ SZÁMOK">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/icons8_5_circle_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="173.0" fitWidth="193.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8_clover_ouline.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="12.0" />
+               </VBox.margin>
+            </ImageView>
+            <Region VBox.vgrow="ALWAYS" />
+            <Button fx:id="ButtonBack" mnemonicParsing="false" onMouseClicked="#Back" prefHeight="40.0" prefWidth="173.0" style="-fx-background-radius: 30 30 30 30;" stylesheets="@../CSS/Button.css" text="KEZDŐLAP">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <top>
+      <HBox alignment="CENTER_RIGHT" onMouseDragged="#Dragged" onMousePressed="#Pressed" style="-fx-background-color: #222222;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8_5_circle_32px.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #95D12A;" text="-ös Lottó">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Text>
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="ButtonMin" mnemonicParsing="false" onMouseClicked="#Minimize" stylesheets="@../CSS/Button.css">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/icons8_thick_vertical_line_filled_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets bottom="5.0" right="10.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#FullScreen" stylesheets="@../CSS/Button.css">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/icons8_rectangle_stroked_64px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets bottom="5.0" right="10.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="ButtonClose" mnemonicParsing="false" onMouseClicked="#Close" stylesheets="@../CSS/Button.css">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/icons8_shutdown_32px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets bottom="5.0" right="10.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
